@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+}
+
+.san-pham {
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.san-pham > .name {
+    font-variant: small-caps;
+    color: orange;
+}
+
+.san-pham > .image {
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.san-pham > .icon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 25px;
+}
+
+.san-pham > .new {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+}

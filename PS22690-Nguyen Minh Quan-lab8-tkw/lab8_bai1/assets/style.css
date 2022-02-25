@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    background-color: orangered;
+    height: 46px;
+}
+
+.menu {
+}
+
+li {
+    /* margin: 20px; */
+    display: block;
+    display: inline-block;
+    list-style: none;
+}
+
+li > a {
+    font-size: 20px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #fff;
+    display: block;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+.menu li a:hover {
+    color: #000;
+    background-color: violet;
+}

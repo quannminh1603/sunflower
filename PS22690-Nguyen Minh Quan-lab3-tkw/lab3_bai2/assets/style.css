@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.header {
+    color: #333;
+}
+
+.anh_em {
+    color: brown;
+}
+
+.doan1 {
+    color: green;
+}
+
+.doan4 {
+    color: red;
+}

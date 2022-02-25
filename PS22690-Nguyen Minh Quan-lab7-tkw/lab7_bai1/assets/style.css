@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin: 20px;
+    list-style: none;
+    box-shadow: 0 0 20px rgb(29, 238, 81);
+    width: 30%;
+}
+
+.menu .bullet {
+    border-radius: 50%;
+    background-color: lightblue;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 16px;
+    box-shadow: 4px 5px 4px #333;
+}
+
+.menu li a {
+    border-bottom: 1px dotted orange;
+    color: orange;
+    font-variant: small-caps;
+    font-size: 24px;
+    text-decoration: none;
+    /* padding: 8px 5px 8px 30px; */
+    clear: left;
+    margin-left: 12px;
+}
+
+.menu li:hover {
+    background-color: violet;
+    cursor: pointer;
+}
+
+.menu li:hover a {
+    color: #fff;
+}
+
+.menu li:hover .bullet {
+    background-color: red;
+    box-shadow: inset 4px 5px 4px #333;
+}
+

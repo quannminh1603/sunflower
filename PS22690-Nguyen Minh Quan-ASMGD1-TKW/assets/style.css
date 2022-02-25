@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    height: 1033px;
+    max-width: 1920px;
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/bg-page1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header {
+    display: inline-block;
+    position: absolute;
+}
+
+.nav {
+    margin-top: 24px;
+    margin-left: 150px;
+}
+
+.sub_nav {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(231, 216, 78);
+    width: 60px;
+    background-color: rgb(204, 63, 162);
+    padding: 20px;
+    border-radius: 30%;
+}
+
+.logo1 {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/logo.webp);
+    width: 56%;
+    height: 30%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 44%;
+}
+
+.logo2 {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/slogan1.webp);
+    width: 64%;
+    height: 24%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 21%;
+}
+
+.video {
+    position: absolute;
+    margin-left: 1%;
+}
+
+.dang_ky {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/bg-text.png);
+    width: 44%;
+    height: 12%;
+    background-repeat: no-repeat;
+    margin-left: 28%;
+    margin-top: 34%;
+    position: relative;
+}
+
+.content1 {
+    position: absolute;
+    margin-top: 6%;
+    font-size: 18px;
+    line-height: 10px;
+    margin-left: 28%;
+    font-weight: bold;
+}
+
+.content2 {
+    margin-left: 34%;
+    margin-top: 11%;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.so_luot {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/loading.png);
+    width: 45%;
+    height: 8%;
+    background-repeat: no-repeat;
+    margin-left: 28%;
+    margin-top: 28px;
+}
+
+.moc_1 {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/moc.png);
+    width: 24%;
+    height: 12%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 42%;
+}
+
+.moc_1:hover, 
+.moc_2:hover {
+    cursor: pointer;
+}
+
+.moc_1 .content1 {
+    margin-left: 5%;
+    margin-top: 12%;
+    color: red;
+    font-weight: 900;
+}
+
+.moc_2 {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/moc.png);
+    width: 24%;
+    height: 12%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 68%;
+}
+
+.moc_2 .content2 {
+    margin-left: 4%;
+    margin-top: 11%;
+    color: red;
+    font-weight: 900;
+}
+
+.slogan {
+    background-image: url(https://cdn.smobgame.com/template/S33/images/landing/slogan2.webp);
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 12%;
+    margin-top: -1%;
+    margin-left: 25%;
+}

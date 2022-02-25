@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <form action="">
+        <div class="name">
+            Họ và Tên:
+            <br>
+            <input class="inname" type="text">
+        </div>
+
+        <fieldset>
+            <div class="gioi-tinh">
+                Giới tính:
+                <br>
+                <input type="radio"> Nam
+                <input type="radio"> Nữ
+            </div>
+        </fieldset>
+        <div class="ngay-sinh">
+            Ngày sinh:
+            <br>
+            <input class="date" type="date">
+        </div>
+        <div class="score">
+            Điểm:
+            <br>
+            <input class="diem" type="number" min="0" max="10" step="0.25" value="0.25">
+        </div>
+        <div class="nn">
+            Nghề nghiệp:
+            <br>
+            <select name="" id="" class="nghe-nghiep">
+                <option value="">Hướng dẫn viên du lịch</option>
+                <option value="">Giáo viên</option>
+                <option value="">Lập trình viên</option>
+                <option value="">Bán hàng</option>
+                <option value="">Xây dựng</option>
+            </select>
+        </div>
+        <fieldset>
+            <div class="so-thich">
+                Sở thích:
+                <br>
+                <input class="ml-20" type="checkbox">Thể thao
+                <input class="ml-20" type="checkbox">Du lịch
+                <input class="ml-20" type="checkbox">Âm nhạc
+                <input class="ml-20" type="checkbox">Ẩm thực
+            </div>
+        </fieldset>
+        <div class="note">
+            Ghi chú:
+            <br>
+            <textarea class="ghi-chu" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <hr>
+        <br>
+        <button>Đăng ký</button>
+        <button>Nhập lại</button>
+    </form>
+</body>
+</html>

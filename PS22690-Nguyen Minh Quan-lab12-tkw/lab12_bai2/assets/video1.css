@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.video {
+    width: 70%;
+    float: left;
+}
+
+iframe {
+    width: 100%;
+    height:622px;
+}
+
+.image {
+    width: 30%;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: 205px;
+}

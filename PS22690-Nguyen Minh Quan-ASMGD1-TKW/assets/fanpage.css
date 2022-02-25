@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 64px;
+    border-bottom: 1.2px solid #ccc;
+    line-height: 64px;
+}
+
+input {
+
+}
+
+p {
+    display: inline-block;
+}
+
+p .ti-facebook {
+    background-color: rgb(48, 148, 230);
+    padding: 16px;
+    border-radius: 50%;
+}

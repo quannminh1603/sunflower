@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#main {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.header {
+    color: #fff;
+    text-shadow: 0 0 5px red;
+}
+
+.general {
+    font-variant: small-caps;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.doan1 {
+    color: red;
+}
+
+.doan2 {
+    color: blue;
+}
+
+.doan3 {
+    color: green;
+}
+
+.stars {
+    color: brown;
+}

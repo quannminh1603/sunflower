@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {
+    margin: 0 12px;
+}
+
+.header {
+    text-align: center;
+}
+
+.album1 img {
+    float: left;
+    width: 23%;
+    height: 300px;
+    margin: 12px 12px;
+    padding: 4px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 6px lightblue;
+}
+
+.album2 img {
+    float: left;
+    width: 23%;
+    height: 300px;
+    margin: 12px 12px;
+    padding: 4px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 6px lightblue;
+}
+
+.album1 img:hover {
+    box-shadow: 0 0 20px 6px red;
+    background-color: aqua;
+}
+
+.album2 img:hover {
+    box-shadow: 0 0 20px 6px red;
+    background-color: aqua;
+}
+
+.line {
+    width: 100%;
+}
+
+.image {
+    /* float: left;
+    width: 23%;
+    height: 300px;
+    margin: 12px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 10px 5px 5px red; */
+}

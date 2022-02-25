@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+#main {
+
+}
+
+.chung {
+    border: solid 1px violet;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+    width: 24%;
+}
+
+.chung:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 6px red;
+    background-color: aqua;
+}
+
+.phone{
+}
+
+.image {
+    height: 220px;
+}
+
+.name {
+    color: blue;
+}
+
+del {
+    color: #ccc;
+}
+
+.price {
+    color: red;
+}

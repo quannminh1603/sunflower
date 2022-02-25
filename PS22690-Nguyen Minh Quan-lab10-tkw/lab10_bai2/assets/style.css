@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 20px;
+    font-variant: small-caps;
+}
+
+div, fieldset {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.date, .nghe-nghiep, .inname {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.diem {
+    width: 90px;
+    height: 30px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ghi-chu {
+    width: 100%;
+}
+
+.ghi-chu:focus {
+    background-color: lightblue;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}

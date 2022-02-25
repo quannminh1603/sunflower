@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    text-align: center;
+    margin: 20px 40px 0;
+}
+
+.logo {
+    width: 50%;
+    height: 200px;
+}
+
+.general_link {
+    font-size: 20px;
+}
+
+.general_link > a:visited {
+    color: green;
+}
+
+.general_link > a {
+    font-variant: small-caps;
+    color: blue;
+}
+
+.general_link a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.private {
+    text-decoration: none;
+}
+
+.lien_ket {
+    padding-left: 8px;
+    border-left: 1px solid;
+    text-decoration: none;
+}

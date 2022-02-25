@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    margin-left: 12px;
+}
+
+.logo {
+    width: 360px;
+    height: 150px;
+}
+
+.content {
+    margin-top: 32px;
+}
+
+.header {
+    
+}
+
+.sub-content {
+    width: 30%;
+    margin-top: 32px;
+    font-size: 18px;
+}
+
+.sv_poly {
+    /* width: 120px; */
+    height: 76px;
+    float: left;
+}
+
