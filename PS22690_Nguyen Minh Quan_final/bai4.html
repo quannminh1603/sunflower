@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS22690_Nguyễn Minh Quân</title>
+    <script src="./assets/bai1.js"></script>
+    <link rel="stylesheet" href="./assets/bai1.css">
+</head>
+<body>
+     <!-- phần 1 -->
+    <div id="phan1">
+        <div class="background">
+            <h3>GIẢI PHƯƠNG TRÌNH ax<sup>2</sup> + bx + c</h3>
+            <br>
+            <div>Số lần giải: <span id="soLanGiai"></span></div>
+            <hr>
+            <br>
+            <form>
+                <div><span>Nhập a:</span> <input id="a"></div>
+                <br>
+                <div><span>Nhập b:</span> <input id="b"></div>
+                <br>
+                <div><span>Nhập c:</span> <input onchange="lockButton(false);" id="c"></div>
+                <br>
+                <button id="giaiPT" onclick="lockButton(true);dem();giai();" disabled>Giải PT</button>
+                <button type="button" id="chonSo" onclick="random();lockButton(false);">Chọn số</button>
+                <br>
+            </form>
+            <br>
+            <div class="ketqua">Kết quả: <span id="ketQua"></span></div>
+            <br>
+            <div id="time"></div>
+        </div>
+    </div>
+
+     <!-- phần 2 -->
+    <div id="phan2">
+        <div class="image">
+            <h1>ALBUM ẢNH</h1>
+            <img src="./img/0.jpg" alt="" id="anh">
+            <button class="btn1" onclick="prev();"> < </button>
+            <button class="btn2" onclick="next();"> > </button>
+            <div id="stt">1</div>
+        </div>
+    </div>
+
+    <!-- phần 3 -->
+    <div id="phan3">
+        <h1>BẢNG SẢN PHẨM</h1>
+        <select id="mucgia" onchange="doimucgia();">
+                <option value="-1">Chọn mức giá</option>
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="600">600</option>
+                <option value="800">800</option>
+                 
+        </select>
+        <table id="table_SP" border="1">
+            <tr>
+                <th colspan="2">Hàng Hóa</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(0)" type="checkbox" name="chon"></td>
+                <td>Sony</td>
+                <td name="gia">450</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(1)" type="checkbox" name="chon"></td>
+                <td>Iphone</td>
+                <td name="gia">700</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(2)" type="checkbox" name="chon"></td>
+                <td>SamSung</td>
+                <td name="gia">400</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(3)" type="checkbox" name="chon"></td>
+                <td>Nokia</td>
+                <td name="gia">100</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(4)" type="checkbox" name="chon"></td>
+                <td>Morola</td>
+                <td name="gia">180</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td> 
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(5)" type="checkbox" name="chon"></td>
+                <td>Oppo</td>
+                <td name="gia">600</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(6)" type="checkbox" name="chon"></td>
+                <td>Bphone</td>
+                <td name="gia">90</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr class="tong">
+                <th colspan="4">TỔNG</th>
+                <td id="tinhtong"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- phần 4 -->
+<div id="content">
+    <div class="khung">
+        <div class="tittle">
+            <h1>Đăng ký thành viên</h1>
+        </div>
+        <div id="noidung">
+            <form id="form">
+                <div class="form-group">
+                    <legend>Mã sinh viên</legend>
+                    <input type="text" class="dk" id="msv">
+                    <br>
+                    <br>
+                    <span class="mssv"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Họ và Tên</legend>
+                    <input type="text" class="dk" id="name">
+                    <br>
+                    <br>
+                    <span class="name"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Email</legend>
+                    <input type="email" class="dk" id="email">
+                    <br>
+                    <br>
+                    <span class="email"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Giới tính</legend>
+                    <div id="frames">
+                        <div class="nho">
+                            <input type="radio" name="gender"> Nam
+                            <input type="radio" name="gender"> Nữ
+                        </div>
+                    </div>
+                    <p class="gender p"></p>
+                </div>
+                <div class="form-group">
+                    <legend>Sở thích</legend>
+                    <div id="frames2">
+                        <div class="nho">
+                            <input type="checkbox" name="checkbox">
+                             <label>Đọc sách</label>
+                            <input type="checkbox" name="checkbox">
+                            <label>Du lịch</label>
+                            <input type="checkbox" name="checkbox">
+                            <label>Âm nhạc</label>
+                            <input type="checkbox" name="checkbox">
+                            <label>Ẩm thực</label>
+                            <input type="checkbox" name="checkbox">
+                            <label>Khác</label>
+                        </div>
+                    </div>
+                    <p class="hobby p"></p>
+                </div>
+                <div class="form-group">
+                    <legend>Quốc tịch</legend>
+                    <select name="select" class="select" id="nationality">
+                        <option value="0">Chọn Quốc Tịch</option>
+                        <option value="1">Việt Nam</option>
+                        <option value="2">China</option>
+                        <option value="3">Japan</option>
+                        <option value="4">Korea</option>
+                    </select>
+                    <p class="nationality p"></p>
+                </div>
+                <div class="form-group">
+                    <legend>Ghi chú</legend>
+                    <textarea type="textarea" class="note" id="note"></textarea><br>
+                    <span></span>
+                </div>
+                <div class="but">
+                    <br><button class="button">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+    // khai báo biến
+    var $ = document.querySelector.bind(document)
+    var $$ = document.querySelectorAll.bind(document)
+
+    var form = $('#form')
+    var mssv = $('#msv')
+    var fullName = $('#name')
+    var email = $('#email')
+    var genders = $$('input[name="gender"]')
+    var interests = $$('input[name="checkbox"]')
+    var nationality = $('#nationality')
+    var note = $('#note')
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        validator()
+    })
+
+    function validator() {
+        //Không để trống: mã số sinh viên
+        if (mssv.value === '') {
+            errorMessage(mssv, 'Không để trống mã số sinh viên')
+        } else {
+            successMessage(mssv)
+        }
+
+        //Không để trống họ tên 
+        if (fullName.value === '') {
+        errorMessage(fullName, 'Không để trống họ và tên')
+        } else {
+        successMessage(fullName)
+        }
+
+        //Không để trống email 
+        if (email.value === '') {
+        errorMessage(email, 'Không để trống email')
+        } else {
+            successMessage(email)
+        }
+
+        //Phải chọn giới tính
+        if (!genders[0].checked && !genders[1].checked) {
+            $('.gender').innerText = 'Phải chọn giới tính'
+        $('.gender').style.color = 'red'
+        } else {
+            $('.gender').innerText = ''
+            $('#frames').style.background = 'none'
+            $('#frames').style.borderColor = 'red'
+        }
+
+        //Phải chọn sở thích 
+        var check = 0
+        for (var i = 0; i < interests.length; i++) {
+        if (interests[i].checked == true) {
+            check++
+            }
+        }
+        if (check == 0) {
+        $('.hobby').innerText = 'Phải chọn sở thích'
+        } else {
+        $('.hobby').innerText = ''
+            $('#frames2').style.background = 'none'
+            $('#frames2').style.borderColor = 'green'
+        }
+
+        //Phải chọn quốc tịch
+        if (nationality.value == 0) {
+            $('.nationality').innerText = 'Phải chọn quốc tịch'
+        } else {
+        $('.nationality').innerText = ''
+            $('select').style.background = 'none'
+            $('select').style.borderColor = 'green'
+        }
+
+        //Ghi chú phải ít hơn 200 ký tự
+        if (note.value.length > 200) {
+            errorMessage(note, 'Ít hơn 200 ký tự')
+        } else {
+            successMessage(note)
+        }
+    }
+
+    //set lỗi
+    function errorMessage(input, message) {
+        var formGroup = input.parentElement
+        var span = formGroup.querySelector('span')
+        formGroup.className = 'form-group error'
+        span.innerText = message
+    }
+
+    //set thành công
+    function successMessage(input) {
+        var formGroup = input.parentElement
+        formGroup.className = 'form-group success'
+    }
+
+</script>
+</html>

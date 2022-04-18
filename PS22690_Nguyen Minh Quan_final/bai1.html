@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS22690_Nguyễn Minh Quân</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="./assets/bai1.js"></script>
+    <link rel="stylesheet" href="./assets/bai1.css">
+</head>
+<body ng-app="b4" ng-controller="ctr1">
+     <!-- phần 1 -->
+    <div id="phan1">
+        <div class="background">
+            <h3>GIẢI PHƯƠNG TRÌNH ax<sup>2</sup> + bx + c</h3>
+            <div>Số lần giải: <span id="soLanGiai"></span></div>
+            <hr>
+            <br>
+            <form>
+                <div><span>Nhập a:</span> <input id="a"></div>
+                <br>
+                <div><span>Nhập b:</span> <input id="b"></div>
+                <br>
+                <div><span>Nhập c:</span> <input onchange="lockButton(false);" id="c"></div>
+                <br>
+                <button id="giaiPT" onclick="lockButton(true);dem();giai();" disabled>Giải PT</button>
+                <button type="button" id="chonSo" onclick="random();lockButton(false);">Chọn số</button>
+                <br>
+            </form>
+            <br>
+            <div class="ketqua">Kết quả: <span id="ketQua"></span></div>
+            <br>
+            <div id="time"></div>
+        </div>
+    </div>
+
+     <!-- phần 2 -->
+    <div id="phan2">
+        <div class="image">
+            <h1>ALBUM ẢNH</h1>
+            <img src="./img/0.jpg" alt="" id="anh">
+            <button class="btn1" onclick="prev();"> < </button>
+            <button class="btn2" onclick="next();"> > </button>
+            <div id="stt">1</div>
+        </div>
+    </div>
+
+    <!-- phần 3 -->
+    <div id="phan3">
+        <h1>BẢNG SẢN PHẨM</h1>
+        <select id="mucgia" onchange="doimucgia();">
+                <option value="-1">Chọn mức giá</option>
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="600">600</option>
+                <option value="800">800</option>
+                 
+        </select>
+        <table id="table_SP" border="1">
+            <tr>
+                <th colspan="2">Hàng Hóa</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(0)" type="checkbox" name="chon"></td>
+                <td>Sony</td>
+                <td name="gia">450</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(1)" type="checkbox" name="chon"></td>
+                <td>Iphone</td>
+                <td name="gia">700</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(2)" type="checkbox" name="chon"></td>
+                <td>SamSung</td>
+                <td name="gia">400</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(3)" type="checkbox" name="chon"></td>
+                <td>Nokia</td>
+                <td name="gia">100</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(4)" type="checkbox" name="chon"></td>
+                <td>Morola</td>
+                <td name="gia">180</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td> 
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(5)" type="checkbox" name="chon"></td>
+                <td>Oppo</td>
+                <td name="gia">600</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input onclick="tich1checkbox(6)" type="checkbox" name="chon"></td>
+                <td>Bphone</td>
+                <td name="gia">90</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr class="tong">
+                <th colspan="4">TỔNG</th>
+                <td id="tinhtong"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- phần 4 -->
+<div id="content">
+    <div class="khung">
+        <div class="tittle">
+            <h1>Đăng ký thành viên</h1>
+        </div>
+        <div id="noidung">
+            <form id="form">
+                <div class="form-group">
+                    <legend>Mã sinh viên</legend>
+                    <input name="tensp" required minlength="2" maxlength="30" ng-model="tensp" type="text" class="dk" id="msv">
+                    <br>
+                    <em ng-if="!tensp" class="text-danger h6">Nhập vào MSSV</em>
+                    <span class="mssv"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Họ và Tên</legend>
+                    <input name="hoten" required minlength="2" maxlength="30" ng-model="hoten" type="text" class="dk" id="name">
+                    <br>
+                    <em ng-if="!hoten" class="text-danger h6">Nhập vào họ và tên</em>
+                    <span class="name"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Email</legend>
+                    <input name="mail" required minlength="2" maxlength="30" ng-model="mail" type="email" class="dk" id="email">
+                    <br>
+                    <em ng-if="!mail" class="text-danger h6">Nhập vào địa chỉ Email</em>
+                    <span class="email"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Giới tính</legend>
+                    <div id="frames">
+                        <div class="nho">
+                            <input ng-model="tinhtrang" type="radio" name="tinhtrang" value="1"> Nam
+                            <input ng-model="tinhtrang" type="radio" name="tinhtrang" value="2"> Nữ
+                            <em ng-if="!tinhtrang" class="text-danger h6"><br>Hãy chọn giới tính</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <legend>Sở thích</legend>
+                    <div id="frames2">
+                        <div class="nho">
+                            <input ng-model="checkbox1" type="checkbox" name="checkbox1">
+                             <label>Đọc sách</label>
+                            <input ng-model="checkbox2" type="checkbox" name="checkbox2">
+                            <label>Du lịch</label>
+                            <input ng-model="checkbox3" type="checkbox" name="checkbox3">
+                            <label>Âm nhạc</label>
+                            <input ng-model="checkbox4" type="checkbox" name="checkbox4">
+                            <label>Ẩm thực</label>
+                            <input ng-model="checkbox5" type="checkbox" name="checkbox5">
+                            <label>Khác</label>
+                            <em ng-if="!checkbox1 && !checkbox2 && !checkbox3 && !checkbox4 && !checkbox5" class="text-danger h6"><br>Chọn sở thích của bạn</em>
+                        </div>
+                    </div>
+                    <p class="hobby p"></p>
+                </div>
+                <div class="form-group">
+                    <legend>Quốc tịch</legend>
+                    <select ng-model="nsx" name="nsx" class="select" id="nationality">
+                        <option value="0">Chọn Quốc Tịch</option>
+                        <option value="1">Việt Nam</option>
+                        <option value="2">China</option>
+                        <option value="3">Japan</option>
+                        <option value="4">Korea</option>
+                    </select>
+                    <br>
+                    <em ng-if="!nsx || nsx==0" class="text-danger h6">Hãy chọn 1 nhà sx</em>
+                    <p class="nationality p"></p>
+                </div>
+                <div class="form-group">
+                    <legend>Ghi chú</legend>
+                    <textarea type="textarea" class="note" id="note"></textarea><br>
+                    <span></span>
+                </div>
+                <div class="but">
+                    <br><button class="button">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    
+        app= angular.module("b4",[]);
+        app.controller("ctr1",xuly);
+        function xuly($scope){
+            //code xử lý
+        }
+    </script>
+</html>

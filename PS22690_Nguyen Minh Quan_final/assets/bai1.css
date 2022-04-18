@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#phan1 {
+    background-color: rgb(238, 235, 235);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.background {
+    background-color: rgb(201, 48, 48);
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 20px 330px;
+}
+
+.ketqua {
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #fff;
+    background-color: violet;
+    border-radius: 10px 10px 0 0;
+}
+
+h3:hover {
+    color: #000;
+}
+
+#phan1 h3, input, button {
+    cursor: pointer;
+}
+
+#phan1 form {
+    border-radius: 6px;
+}
+
+div > span {
+    color: #000;
+}
+
+#phan1 input {
+    width: 50%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    font-size: 17px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 17px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: chartreuse;
+    color: rgb(207, 46, 46);
+}
+
+.ketqua {
+    color: #fff;
+}
+
+#time {
+    font-style: italic;
+    color: yellow;
+}
+
+#time:hover {
+    color: rgb(224, 98, 214);
+}
+
+.image {
+    background-color: rgb(238, 235, 235);
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.image > h1 {
+    color: orangered;
+    background-color: rgb(204, 142, 216);
+    width: 800px;
+    margin-left: 263px;
+    border-radius: 10px 10px 0 0;
+}
+
+.image > img {
+    width: 800px;
+    height: 800px;
+}
+
+.image {
+    position: relative;
+}
+
+.image > .btn1,
+.image > .btn2 {
+    position: absolute;
+}
+
+.btn1 {
+    left: 275px;
+    top: 460px;
+}
+
+.image > button {
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn2 {
+    right: 275px;
+    top: 460px;
+}
+
+.image > h1:hover {
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.image > #stt {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -5px;
+    padding: 8px;
+    width: 800px;
+    margin-left: 263px;
+    border-radius: 0 0 10px 10px;
+}
+
+#phan3 {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(238, 235, 235);
+    padding: 10px;
+}
+
+#phan3 select {
+    padding: 4px 12px;
+}
+
+@-webkit-keyframes my {
+    0% { color: #F8CD0A;} 
+    25% {color: rgb(240, 66, 66);}
+    50% { color: rgb(108, 240, 108);} 
+    75% { color: rgb(36, 47, 190);}
+    100% { color: #da4991;} 
+}
+#phan3 h1 {
+    /* font-size: 32px; */
+
+    font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+
+table {
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 200px;
+    background-color: aquamarine;
+}
+
+.box {
+    width: 30px;
+}
+
+.footer {
+    background-color: aqua;
+}
+
+#content {
+    background-color: rgb(238, 235, 235);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.dk {
+    padding: 8px 10px;
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+@-webkit-keyframes my {
+    0% { color: #F8CD0A;} 
+    25% {color: rgb(240, 66, 66);}
+    50% { color: rgb(108, 240, 108);} 
+    75% { color: rgb(36, 47, 190);}
+    100% { color: #da4991;} 
+}
+.tittle > h1 {
+    /* font-size:24px; */
+
+    font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+
+legend {
+    margin-bottom: 8px;
+    background-color: rgb(204, 228, 174);
+    width: 18%;
+    margin-left: 320px;
+}
+
+.form-group > select, .form-group > textarea {
+    padding: 10px;
+    width: 48%;
+}
+
+.but > .button{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 80px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+}
+
+.but > .button:hover {
+    color: #000;
+    background-color: rgb(102, 212, 245);
+
+}
+
+.mssv, .name, .email, .hobby, .nationality {
+    color: red;
+}
+
+.khung {
+    border: 1px #000 solid;
+    width: 60%;
+    margin-left: 300px;
+}
